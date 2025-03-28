@@ -83,6 +83,22 @@
             height: auto;
             margin-bottom: 20px;
         }
+
+        /* Make columns responsive for mobile */
+        @media (max-width: 768px) {
+            .left-column, .right-column {
+                padding: 15px;
+            }
+
+            .left-column {
+                margin-bottom: 20px;
+            }
+
+            .header h1 {
+                font-size: 28px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -98,24 +114,24 @@
         <!-- CV Content -->
         <div class="row">
             <!-- Left Column (Personal Info and Skills) -->
-            <div class="col-3 left-column">
+            <div class="col-12 col-md-3 left-column">
                 <div class="text-center mb-4">
                     <img src="selfie.png" alt="Austin Grant">
                 </div>
-                <h3>ABOUT</h3>
+                <h3 style="padding-left: 5px;">ABOUT</h3>
                 <ul>
                     <li><strong>Age:</strong> 26</li>
                     <li><strong>Birthday:</strong> 21/Sep/1998</li>
                     <li><strong>Location:</strong> Piet Retief, South Africa</li>
                 </ul>
                 <hr>
-                <h3>CONTACT</h3>
+                <h3 style="padding-left: 5px;">CONTACT</h3>
                 <ul>
                     <li><strong>Email:</strong> agrantdeveloper@gmail.com</li>
                     <li><strong>Phone:</strong> 072 288 1923</li>
                 </ul>
                 <hr>
-                <h3>SKILLS</h3>
+                <h3 style="padding-left: 5px;">SKILLS</h3>
                 <ul>
                     <li>HTML, CSS, JavaScript</li>
                     <li>PHP (Laravel, CakePHP, WordPress)</li>
@@ -127,36 +143,36 @@
             </div>
 
             <!-- Right Column (Professional Experience and Projects) -->
-            <div class="col-9 right-column">
-                <h3>BIO</h3>
-                <p>I am a 26-year-old, home-schooled, and self-taught programmer with a passion for both software and hardware. My interest in development began at an early age, starting with Scratch and moving on to more complex languages such as HTML, CSS, Python, and JavaScript. Over the years, I have focused on mastering web and mobile app development and building solutions that are both efficient and scalable.</p>
+            <div class="col-12 col-md-9 right-column">
+                <h3 style="padding-left: 5px;">BIO</h3>
+                <p style="padding-left: 35px;">I am a 26-year-old, home-schooled, and self-taught programmer with a passion for both software and hardware. My interest in development began at an early age, starting with Scratch and moving on to more complex languages such as HTML, CSS, Python, and JavaScript. Over the years, I have focused on mastering web and mobile app development and building solutions that are both efficient and scalable.</p>
                 <hr>
 
-                <h3>EXPERIENCE</h3>
-                <div class="experience-entry">
+                <h3 style="padding-left: 5px;">EXPERIENCE</h3>
+                <div style="padding-left: 35px;" class="experience-entry">
                     <h4>WEB & MOBILE APP DEVELOPER</h4>
-                    <i>Wowfingers, Capetown, 2021 - 2025</i>
+                    <i>Wowfingers, Capetown, 2021 - Present</i>
                     <p>Developed web and mobile applications using Laravel, WordPress, Vue.js, React, and Angular. Worked with APIs and MySQL databases, delivering solutions like a data management dashboard, eCommerce sites, and task management applications.</p>
                 </div>
-                <div class="experience-entry">
+                <div style="padding-left: 35px;" class="experience-entry">
                     <h4>WEB DEVELOPER</h4>
                     <i>Creative8, Capetown, 2020 - 2021</i>
                     <p>Built websites using PHP frameworks like CakePHP and Laravel. Focused on site maintenance, feature development, and bug fixes for high-traffic websites.</p>
                 </div>
-                <div class="experience-entry">
+                <div style="padding-left: 35px;" class="experience-entry">
                     <h4>WEB DEVELOPMENT INTERN</h4>
                     <i>Tom Cat Creation, Hermanus, 2016 - 2017</i>
                     <p>Assisted in developing features for websites using PHP and CakePHP. Learned backend development techniques while contributing to live projects.</p>
                 </div>
                 <hr>
 
-                <h3>STUDIES AND EXPERIENCE</h3>
-                <div class="experience-entry">
+                <h3 style="padding-left: 5px;">STUDIES AND EXPERIENCE</h3>
+                <div style="padding-left: 35px;" class="experience-entry">
                     <h4>PROGRAMMING</h4>
                     <i>Self-taught, 2012 - Now</i>
                     <p>Proficient in HTML, CSS, JavaScript, PHP, Python, Java, Laravel, CakePHP, WordPress, Django, Angular, and Vue.js. Gained experience through personal projects and professional work.</p>
                 </div>
-                <div class="experience-entry">
+                <div style="padding-left: 35px;" class="experience-entry">
                     <h4>ELECTRONICS</h4>
                     <i>Self-taught, 2012 - Now</i>
                     <p>Developed hands-on skills with electronics, including Arduino projects, circuit building, and PC hardware upgrades.</p>
