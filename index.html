@@ -78,16 +78,30 @@
 
 		.cta-btn {
 			background-color: #00d2ff;
-			padding: 12px 30px;
+			padding: 15px 34px;
 			border-radius: 30px;
 			color: #fff;
-			font-size: 1.1rem;
+			font-size: 1.3rem;
+			margin-top: 20px;
+			text-decoration: none;
+		}
+
+		.cta-btn-cv {
+			background-color: #1e1e1e;
+			padding: 15px 34px;
+			border-radius: 30px;
+			color: #00d2ff;
+			font-size: 1.3rem;
 			margin-top: 20px;
 			text-decoration: none;
 		}
 
 		.cta-btn:hover {
 			background-color: #00a1a1;
+		}
+
+		.cta-btn-cv:hover {
+			color: #00a1a1;
 		}
 
 		/* Section Styles */
@@ -180,11 +194,17 @@
 				justify-content: space-evenly;
 				width: 100%;
 			}
+			.cta {
+				width: 50%;
+			}
 		}
 
 		@media (max-width: 768px) {
 			.project {
 				flex: 1 0 calc(50% - 20px); /* 2 projects per row on tablets */
+			}
+			.cta {
+				width: 100%;
 			}
 		}
 
@@ -227,8 +247,16 @@
 	<section id="hero" class="hero">
 		<h1>Austin Grant</h1>
 		<p>Web & Mobile Developer | Empowering Brands with Modern Solutions</p>
-		<!-- <p>Full Stack Developer | Web & Mobile | Creative Technologist</p> -->
-		<a href="#projects" class="cta-btn">View My Work</a>
+		<div class="container cta">
+			<div class="row">
+				<div class="col-12 col-md-6 pt-5">
+					<a href="#projects" class="cta-btn">View My Work</a>
+				</div>
+				<div class="col-12 col-md-6 pt-5">
+					<a target="_blank" href="austin-cv.pdf" class="cta-btn-cv">View My CV</a>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<!-- About Section -->
